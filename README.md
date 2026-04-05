@@ -19,25 +19,37 @@ Cross-platform **React Native (Expo)** app that helps you track transactions, vi
 ## 📸 Screenshots
 
 ### 🏠 Dashboard
-![Dashboard](./assets/screenshots/dashboard.png)
-![Dashboard](./assets/screenshots/dashboard2.png)
+<p align="center">
+  <img src="./assets/screenshots/dashboard.png" width="250"/>
+  <img src="./assets/screenshots/dashboard2.png" width="250"/>
+</p>
 
 ### 📊 Insights
-![Spending Mix](./assets/screenshots/spending-mix.png)  
-![Spending Rhythm](./assets/screenshots/spending-rhythm.png)
+<p align="center">
+  <img src="./assets/screenshots/spending-mix.png" width="250"/>
+  <img src="./assets/screenshots/spending-rhythm.png" width="250"/>
+</p>
 
 ### 💳 Transactions
-![Transactions](./assets/screenshots/transactions.png)
-![Filters](./assets/screenshots/filters.png)
+<p align="center">
+  <img src="./assets/screenshots/transactions.png" width="250"/>
+  <img src="./assets/screenshots/filters.png" width="250"/>
+</p>
 
 ### ➕ Add Transaction
-![Add Transaction](./assets/screenshots/add-transaction.png)
+<p align="center">
+  <img src="./assets/screenshots/add-transaction.png" width="250"/>
+</p>
 
 ### 🔥 Saving Goals
-![Saving Goals](./assets/screenshots/saving-goals.png)
+<p align="center">
+  <img src="./assets/screenshots/saving-goals.png" width="250"/>
+</p>
 
 ### 👉 Splash Screen
-![Splash Screen](./assets/screenshots/splash-screen.png)
+<p align="center">
+  <img src="./assets/screenshots/splash-screen.png" width="250"/>
+</p>
 
 ---
 
