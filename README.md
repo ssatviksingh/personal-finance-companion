@@ -18,6 +18,11 @@ Cross-platform **React Native (Expo)** app that helps you track transactions, vi
 
 ## 📸 Screenshots
 
+### 👉 Splash Screen
+<p align="center">
+  <img src="./assets/screenshots/splash-screen.png" width="250"/>
+</p>
+
 ### 🏠 Dashboard
 <p align="center">
   <img src="./assets/screenshots/dashboard.png" width="250"/>
@@ -44,11 +49,6 @@ Cross-platform **React Native (Expo)** app that helps you track transactions, vi
 ### 🔥 Saving Goals
 <p align="center">
   <img src="./assets/screenshots/saving-goals.png" width="250"/>
-</p>
-
-### 👉 Splash Screen
-<p align="center">
-  <img src="./assets/screenshots/splash-screen.png" width="250"/>
 </p>
 
 ---
