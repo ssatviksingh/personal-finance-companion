@@ -1,8 +1,53 @@
 # Personal Finance Companion
 
-Cross-platform **React Native (Expo)** app that helps you track transactions, see spending patterns, set a **monthly savings goal**, and browse **insights** — with **offline-first** storage on device (SQLite).
+Cross-platform **React Native (Expo)** app that helps you track transactions, visualize spending patterns, set a **monthly savings goal**, and explore **financial insights** — with **offline-first** storage using SQLite.
 
-## Quick start
+---
+
+## 🚀 Features
+
+- 📊 Dashboard with balance, income, expenses, and charts  
+- 💳 Add, edit, delete transactions  
+- 🔍 Advanced filtering (type, category, period, search)  
+- 🎯 Monthly savings goal tracking  
+- 📈 Insights (trends, top categories, averages)  
+- 🌙 Dark / Light mode support  
+- 📤 CSV export  
+
+---
+
+## 📸 Screenshots
+
+### 🏠 Dashboard
+![Dashboard](./assets/screenshots/dashboard.png)
+![Dashboard](./assets/screenshots/dashboard2.png)
+
+### 📊 Insights
+![Spending Mix](./assets/screenshots/spending-mix.png)  
+![Spending Rhythm](./assets/screenshots/spending-rhythm.png)
+
+### 💳 Transactions
+![Transactions](./assets/screenshots/transactions.png)
+![Filters](./assets/screenshots/filters.png)
+
+### ➕ Add Transaction
+![Add Transaction](./assets/screenshots/add-transaction.png)
+
+### 🔥 Saving Goals
+![Saving Goals](./assets/screenshots/saving-goals.png)
+
+### 👉 Splash Screen
+![Splash Screen](./assets/screenshots/splash-screen.png)
+
+---
+
+## 🎥 Demo Video
+
+👉 [Watch Demo Video](https://drive.google.com/file/d/1Um1GIkxXuHeJaxH9v6oiuEKfeYfEK6nG/view?usp=sharing)
+
+---
+
+## ⚡ Quick start
 
 ```bash
 cd personal-finance-companion
@@ -10,71 +55,72 @@ npm install
 npx expo start
 ```
 
-Then scan the QR code with **Expo Go** (Android/iOS) or press `a` / `i` for an emulator.
+---
 
-## Tech stack
+## 🛠 Tech stack
 
-- **Expo SDK 54**, TypeScript  
-- **React Navigation** — bottom tabs + modal stack for add/edit transaction  
-- **Zustand** — transaction list filters (search, type, category, period)  
-- **expo-sqlite** — local relational data  
-- **react-hook-form** + **zod** — validated forms  
-- **react-native-gifted-charts** — pie (category mix) and bar (trends / weekly) charts  
+- Expo SDK 54, TypeScript
+- React Navigation
+- Zustand
+- expo-sqlite
+- react-hook-form + zod
+- react-native-gifted-charts
 
-## Project layout
+---
 
-```text
+## 📂 Project layout
+
+```bash
 src/
-  components/       Shared UI (cards, empty/loading/error, skeleton)
-  context/          Theme (light/dark/system), database readiness
-  db/               SQLite bootstrap + category seeds
-  features/         dashboard, transactions, insights, goals screens
-  navigation/       Root stack + tabs
-  repositories/     Data access (no SQL in screens)
-  services/         Optional simulated latency helper
-  stores/           Zustand UI state
-  theme/            Colors, spacing
-  utils/            Money (cents), dates, grouping
+  components/
+  context/
+  db/
+  features/
+  navigation/
+  repositories/
+  services/
+  stores/
+  theme/
+  utils/
 ```
 
-## Features (assignment mapping)
+---
 
-| Area | Implementation |
-|------|----------------|
-| **Home** | Balance (all-time), this-month income/expenses, category pie, last-7-days expense bars, savings goal summary |
-| **Transactions** | Add / edit (modal), list with date sections, long-press delete, search & filters, CSV export |
-| **Savings goal** | Monthly target; progress = sum of **income** in category **Savings** for that month |
-| **Insights** | Top category, week-over-week %, 6-month trend, top 3 categories, frequency, average expense |
-| **UX** | Empty states, loading & error (DB init), skeleton on dashboard load, modal forms, theme toggle |
+## 📌 Assumptions
 
-## Assumptions
+- Single currency (USD)
+- Amounts stored in cents
+- Uses device timezone
+- Balance = total income − expenses
+- Savings = income categorized as Savings
+- No backend (offline-first)
 
-- **Single currency (USD)** for display; amounts stored as **integer cents** to avoid floating-point errors.  
-- **Calendar month** uses the device’s local timezone.  
-- **Balance** = sum of all income minus sum of all expenses (all time).  
-- **Savings goal progress** only counts transactions categorized as **Savings** (income). Users record money moved into savings as income with that category.  
-- **No backend**; all data stays on the device.  
+---
 
-## Optional demo polish
+## ⚠️ Known Limitations
 
-- `src/services/financeApi.ts` — `withSimulatedLatency()` can wrap repository calls to show loading states (not wired globally, to keep the app snappy).  
-- **Dark mode**: Goal tab → Appearance (System / Light / Dark).  
+- No cloud sync (data stored locally only)
+- No authentication (single-user system)
+- Limited analytics (basic insights only)
+- No multi-currency support
+- Custom date range UI not implemented
+- SQLite support limited on web
 
-## Known limitations
+---
 
-- **Custom date range** filter is modeled in types but the UI uses presets (all time / this week / this month) for speed.  
-- **Expo web**: SQLite may be unavailable or limited; the app targets **iOS/Android** with Expo Go or dev builds.  
-- Screenshots / demo video: add your own under `docs/` or link in your submission.  
+## 📜 Scripts
 
-## Scripts
+```bash
+| Command         | Description     |
+| --------------- | --------------- |
+| npm start       | Expo dev server |
+| npm run android | Android         |
+| npm run ios     | iOS             |
+| npm run web     | Web (limited)   |
+```
 
-| Command | Description |
-|---------|-------------|
-| `npm start` | Expo dev server |
-| `npm run android` | Open on Android |
-| `npm run ios` | Open on iOS (macOS) |
-| `npm run web` | Web (limited SQLite) |
+---
 
-## License
+## 📄 License
 
-Private / assessment use.
+Private / assessment use
